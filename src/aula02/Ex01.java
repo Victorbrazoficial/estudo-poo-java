@@ -9,7 +9,6 @@ public class Ex01
         tv1.ligada = false;
         tv1.canal = 0;
         tv1.volume = 0;
-        int a = 0;
 
         tv1.status();
 
@@ -18,7 +17,6 @@ public class Ex01
             tv1.ligar();
         }
 
-        tv1.status();
 
         if (tv1.ligada == true)
         {

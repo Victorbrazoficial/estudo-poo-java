@@ -9,7 +9,7 @@ public class Televisao
     int canal;
     int volume;
     Scanner entrada = new Scanner(System.in);
-
+ 
     void status()
     {
         System.out.println();
@@ -38,6 +38,7 @@ public class Televisao
                 this.ligada = true;
                 alteraCanal(a);
                 alterarVolume(a);
+                status();
             }
         }
     }
