@@ -19,5 +19,7 @@ public class Aula05
 
         contaUm.extratoBancario();
         contaDois.extratoBancario();
+
+        contaDois.menu();
     }
 }

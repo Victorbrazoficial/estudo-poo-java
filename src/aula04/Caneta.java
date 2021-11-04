@@ -30,7 +30,7 @@ public class Caneta
         this.tampada = tampada;
         this.tampar(); // metodo para tampar a caneta dentro do construtor.
     }
-    
+
     public String getModelo() // "Getter"
     {
         return this.modelo;
