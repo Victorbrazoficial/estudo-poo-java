@@ -1,4 +1,4 @@
-## Olá, Seja Bem vindo aos meus estudo sobre Poo usando Java. 🙅🏽‍♂️☕   
+## Olá, Seja Bem vindo ao meu estudo sobre Poo usando Java. 🙅🏽‍♂️☕   
 <div style="display: inline_block"><br>
   <img align="center" alt="Rafa-Js" height="50" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg">
 </div>
