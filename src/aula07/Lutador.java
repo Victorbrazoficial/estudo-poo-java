@@ -40,19 +40,19 @@ public class Lutador implements InterfaceLutador
     }
 
     @Override
-    public void ganharLuta()
+    public void ganharLuta() // Soma mais 1 no atributo vitorias
     {
         this.setVitorias(this.getVitorias()+1);
     }
 
     @Override
-    public void perderLuta()
+    public void perderLuta() // Soma mais 1 no atributo derrotas
     {
         this.setDerrotas(this.getDerrotas()+1);
     }
 
     @Override
-    public void empatarLuta()
+    public void empatarLuta() // Soma mais 1 no atributo empates
     {
         this.setEmpates(this.getEmpates()+1);
     }
@@ -95,28 +95,28 @@ public class Lutador implements InterfaceLutador
         return categoria;
     }
     
-    private void setCategoria() 
+    private void setCategoria() // criando a regra de que so pode haver luta entre lutadores da mesma categoria.
     {
-        if (this.getPeso() < 50 )
+        if (this.getPeso() < 50 ) // "peso abaixo de 50 é invalido"
         {
             this.categoria = "Invalido";
         } 
         else
-        if (this.getPeso() <= 70)
+        if (this.getPeso() <= 70) // "peso menor ou igual a 70 é considerado na categoria leve"
         {
             this.categoria = "Leve";
         }
         else
-        if (this.getPeso() <= 80)
+        if (this.getPeso() <= 80) // "peso menor ou igual a 80 é considerado na categoria medio"
         {
             this.categoria = "Medio";
         }
         else
-        if (this.getPeso() <= 120)
+        if (this.getPeso() <= 120) // "peso menor ou igual a 120 é considerado na categoria pesado"
         {
             this.categoria = "Pesado";
         }
-        else
+        else    // "acima de 120 é considerado invalido"
         {
             this.categoria = "Invalido";
         }

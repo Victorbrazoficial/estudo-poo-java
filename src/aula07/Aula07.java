@@ -1,6 +1,6 @@
 package aula07;
 
-// Instanciando os 6 atletas e testando seus metodos para implementar o relacionamento entre Classes.
+// Instanciando os seis atletas e testando seus metodos para implementar o relacionamento entre Classes.
 public class Aula07 
 {
    public static void main(String[] args) 
@@ -13,10 +13,25 @@ public class Aula07
        l[4] = new Lutador("Ufocobol", "Brasileira", 37, 1.70f, 119.3f, 5, 4, 3);
        l[5] = new Lutador("Nerdaard", "Americana", 30, 1.81f, 105.7f, 12, 2, 4);
        
-       for (int i = 0; i < l.length; i++)
-       {
-           l[i].apresentar(); 
-           l[i].status();
-        }
+       Luta luta01 = new Luta();
+       System.out.println();
+       luta01.marcarLuta(l[0], l[1]);
+       luta01.lutar(l[0], l[1]);
+       l[0].status();
+       l[1].status();
+
+       Luta luta02 = new Luta();
+       System.out.println();
+       luta02.marcarLuta(l[2], l[3]);
+       luta02.lutar(l[2], l[3]);
+       l[2].status();
+       l[3].status();
+
+       Luta luta03 = new Luta();
+       System.out.println();
+       luta03.marcarLuta(l[4], l[5]);
+       luta03.lutar(l[4], l[5]);
+       l[4].status();
+       l[5].status();
     }
 }
